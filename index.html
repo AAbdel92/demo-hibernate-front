@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Test Hibernate</title>
+	<link rel="stylesheet" href="styles/main.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="webjars/materialize/0.98.0/dist/css/materialize.min.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css"
+	href="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.css" /> -->
+</head>
+
+<body>
+
+	<a href="/logout">Se déconnecter.</a>
+	<h3>Créer utilisateur</h3>
+	<form>
+		<input type="text" placeholder="pseudo" id="pseudo"> <input type="password" placeholder="mot de passe" id="pass">
+		<input
+		 type="text" placeholder="email" id="email">
+			<select id="idRole"></select>
+			<select id="idPromo"></select>
+	</form>
+	<button id="saveUser">valider</button>
+	<h3>Créer Role</h3>
+	<form>
+		<input type="text" placeholder="nom" id="nomRole">
+	</form>
+	<button id="saveRole">valider</button>
+	<h3>Supprimer Utilisateur</h3>
+	<form>
+		<input type="text" placeholder="pseudo à supprimer" id="deletePseudo">
+	</form>
+	<button id="deleteUser">valider</button>
+	<h3>Ajouter Role a Utilisateur</h3>
+	<form>
+		<input type="text" placeholder="pseudo de l'utilisateur" id="pseudoAjoutRole">
+		<select id="idRoleAjout"></select>
+	</form>
+	<button id="ajoutRole">valider</button>
+	<h3>Chercher Utilisateur par Role</h3>
+	<form>
+		<select id="idRoleSearch"></select>
+	</form>
+	<button id="chercherRole">valider</button>
+	<h3>Creer Promo</h3>
+	<form>
+		<input type="text" placeholder="nom" id="nomPromo">
+	</form>
+	<button id="creerPromo">valider</button>
+	<h3>Supprimer Promo</h3>
+	<form>
+		<input type="text" placeholder="nom" id="nomPromoDelete">
+	</form>
+	<button id="deletePromo">valider</button>
+	<div id="reponse"></div>
+	
+	<script type="text/javascript" src="webjars/jquery/3.2.1/dist/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="webjars/materialize/0.98.0/dist/js/materialize.min.js"></script> -->
+	<!-- <script type="text/javascript" src="webjars/jquery/3.2.1/jquery.min.js"></script> -->
+	<!-- <script type="text/javascript"
+		src="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.js"></script> -->
+	<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>
